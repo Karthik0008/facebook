@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Your credentials
-const PAGE_ID = "925726763957785";
-const PAGE_ACCESS_TOKEN = "EAANlkMQb0DsBQEAxMx5ECN71qWdm9mVc3JPKDAcybDVqBrfzwcA6uoR4OZCpWyy2BZAdegAmRTbpU9Qi9yZCfi0vnWDU3N7UxbNuDrkWKsaMrUI4RxOCUVlNDgQcdWZB5aCa61IavFR9DQgxcG5HCmfZCYPliuvwqCHrcdQo0ZAdVSqJ0uBZCZB7qMND72VwXe4dID9F";  // Your token
+const PAGE_ID = "891812997352206";
+const PAGE_ACCESS_TOKEN = "EAANlkMQb0DsBQYtSUO9gx1uVgL11wEoS9cUbzsbyeK8H4nvaSGdliZBPOpXrRynry9JPeZA4BIMzCaXiBPFyg89rZBS62lvLJABTIGUafjlZCfltNK8ALZARZB4a9ZAVMAKrbNMvDp699ZAqLNijpr6oNMEdf2CDbtYqkkKPZBHgNFxn7iTKTOzSFwrZBJWtHCDgSauFDZAjsoXeuQ66Yd31YOkNN7qGca9dJwhBZA4ZBc9qrCZB0ZD";  // Your token
 
 // Function 1: Post Image
 async function postImage(imageUrl, caption) {
@@ -110,12 +110,12 @@ async function postVideoFromFile(localFilePath, title, description) {
 async function main() {
   console.log("🚀 Facebook API Test Started\n");
   
-  // Test 1: Post Image
-  console.log("--- Test 1: Posting Image ---");
-  await postImage(
-    "https://www.w3schools.com/css/img_5terre.jpg",
-    "Testing Facebook API integration! 📸"
-  );
+  // // Test 1: Post Image
+  // console.log("--- Test 1: Posting Image ---");
+  // await postImage(
+  //   "https://www.w3schools.com/css/img_5terre.jpg",
+  //   "Testing Facebook API integration! 📸"
+  // );
   
 //   console.log("\n--- Test 2: Posting Video from URL ---");
 //   // Using a smaller video URL
@@ -128,9 +128,9 @@ async function main() {
 //   Only run Test 3 if you have a local video
   console.log("\n--- Test 3: Posting Local Video ---");
   await postVideoFromFile(
-    "./videos/trailer.mp4",  // Ensure this path is correct
-    "My Local Video",
-    "Uploaded from my computer"
+    "./videos/62.mp4",  // Ensure this path is correct
+    "Fuel The Soul",
+    "The Old Man and the Tree"
   );
   
   console.log("\n✨ All tests completed!");
